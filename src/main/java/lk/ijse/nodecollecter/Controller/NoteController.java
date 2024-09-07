@@ -1,6 +1,7 @@
 package lk.ijse.nodecollecter.Controller;
 
 import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
+import lk.ijse.nodecollecter.Utill.AppUtill;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +12,7 @@ import java.util.List;
 public class NoteController {
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public String saveNote(@RequestBody NoteDTO noteDTO){
+        noteDTO.setNoteID(AppUtill.generateNoteID());
         return "Note Saved Successfully";
     }
     @GetMapping
