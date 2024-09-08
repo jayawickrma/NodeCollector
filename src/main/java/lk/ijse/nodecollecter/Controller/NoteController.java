@@ -15,7 +15,7 @@ public class NoteController {
         noteDTO.setNoteID(AppUtill.generateNoteID());
         return "Note Saved Successfully";
     }
-    @GetMapping
+    @GetMapping("he")
     public String getSelectedNote(){
         return null;
     }
