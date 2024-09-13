@@ -4,6 +4,6 @@ import java.util.UUID;
 
 public class AppUtill {
     public static String generateNoteID(){
-        return "NOTE -" +  UUID.randomUUID();
+        return "NOTE - " +  UUID.randomUUID();
     }
 }
