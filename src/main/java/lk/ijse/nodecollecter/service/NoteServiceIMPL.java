@@ -1,6 +1,7 @@
 package lk.ijse.nodecollecter.service;
 
 import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
+import lk.ijse.nodecollecter.Utill.AppUtill;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,8 +10,9 @@ public class NoteServiceIMPL implements NoteServices{
 
 
     @Override
-    public String saveNote(NoteDTO noteDTO) {
-        return null;
+    public NoteDTO saveNote(NoteDTO noteDTO) {
+        noteDTO.setNoteID(AppUtill.generateNoteID());
+        return noteDTO;
     }
 
     @Override

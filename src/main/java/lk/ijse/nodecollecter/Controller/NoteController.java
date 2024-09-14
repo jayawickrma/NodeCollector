@@ -2,6 +2,8 @@ package lk.ijse.nodecollecter.Controller;
 
 import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
 import lk.ijse.nodecollecter.Utill.AppUtill;
+import lk.ijse.nodecollecter.service.NoteServices;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,10 +12,12 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v1/notes")
 public class NoteController {
-    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public String saveNote(@RequestBody NoteDTO noteDTO){
+    @Autowired
+    private NoteServices noteServices;
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE ,produces = MediaType.APPLICATION_JSON_VALUE)
+    public NoteDTO saveNote(@RequestBody NoteDTO noteDTO){
         noteDTO.setNoteID(AppUtill.generateNoteID());
-        return "Note Saved Successfully";
+        return noteServices.saveNote(noteDTO);
     }
     @GetMapping("he")
     public String getSelectedNote(){
