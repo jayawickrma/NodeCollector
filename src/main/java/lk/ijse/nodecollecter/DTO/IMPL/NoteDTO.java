@@ -1,5 +1,7 @@
 package lk.ijse.nodecollecter.DTO.IMPL;
 
+
+
 import lk.ijse.nodecollecter.DTO.SuperDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
