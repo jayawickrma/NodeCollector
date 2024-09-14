@@ -14,6 +14,8 @@ import java.util.List;
 public class NoteController {
     @Autowired
     private NoteServices noteServices;
+    //consumes -frontend eken database ekt yawana data
+    //produces -database eken frontend ekata yawana data
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE ,produces = MediaType.APPLICATION_JSON_VALUE)
     public NoteDTO saveNote(@RequestBody NoteDTO noteDTO){
         noteDTO.setNoteID(AppUtill.generateNoteID());
