@@ -10,9 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/NoteEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/NoteEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Config/WebAppRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Config/WebAppRootConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +71,11 @@
     "settings.editor.selected.configurable": "inlay.hints",
     "spring.configuration.checksum": "7fca72dbb2e3d183a580f3113382ccc6",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -180,7 +183,7 @@
       <updated>1725693659313</updated>
       <workItem from="1725693660497" duration="10041000" />
       <workItem from="1726250659542" duration="621000" />
-      <workItem from="1726287383835" duration="13886000" />
+      <workItem from="1726287383835" duration="15301000" />
     </task>
     <task id="LOCAL-00001" summary="init project with dependencies">
       <option name="closed" value="true" />
@@ -326,7 +329,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726306571964</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="entity files and add their primary and foreign keys">
+      <option name="closed" value="true" />
+      <created>1726307305815</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1726307305815</updated>
+    </task>
+    <task id="LOCAL-00020" summary="give pakage name to web app root config file">
+      <option name="closed" value="true" />
+      <created>1726307569614</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1726307569614</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +369,8 @@
     <MESSAGE value="added hibernate code to webAppRootConfig file" />
     <MESSAGE value="driverManagerDataSource" />
     <MESSAGE value="created entity pakages and entity classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="created entity pakages and entity classes" />
+    <MESSAGE value="entity files and add their primary and foreign keys" />
+    <MESSAGE value="give pakage name to web app root config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="give pakage name to web app root config file" />
   </component>
 </project>
