@@ -11,8 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Config/WebAppRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Config/WebAppRootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/NoteEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/NoteEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/UserEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -180,7 +180,7 @@
       <updated>1725693659313</updated>
       <workItem from="1725693660497" duration="10041000" />
       <workItem from="1726250659542" duration="621000" />
-      <workItem from="1726287383835" duration="12631000" />
+      <workItem from="1726287383835" duration="13886000" />
     </task>
     <task id="LOCAL-00001" summary="init project with dependencies">
       <option name="closed" value="true" />
@@ -310,7 +310,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726304672832</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="driverManagerDataSource">
+      <option name="closed" value="true" />
+      <created>1726306038174</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1726306038174</updated>
+    </task>
+    <task id="LOCAL-00018" summary="created entity pakages and entity classes">
+      <option name="closed" value="true" />
+      <created>1726306571964</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1726306571964</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,6 +348,8 @@
     <MESSAGE value="added hibernate-core dependency" />
     <MESSAGE value="added mysql dependency" />
     <MESSAGE value="added hibernate code to webAppRootConfig file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added hibernate code to webAppRootConfig file" />
+    <MESSAGE value="driverManagerDataSource" />
+    <MESSAGE value="created entity pakages and entity classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="created entity pakages and entity classes" />
   </component>
 </project>
