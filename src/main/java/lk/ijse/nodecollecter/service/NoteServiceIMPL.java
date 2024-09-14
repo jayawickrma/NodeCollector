@@ -1,9 +1,10 @@
 package lk.ijse.nodecollecter.service;
 
 import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class NoteServiceIMPL implements NoteServices{
 
 
