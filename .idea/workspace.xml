@@ -184,7 +184,7 @@
       <updated>1725693659313</updated>
       <workItem from="1725693660497" duration="10041000" />
       <workItem from="1726250659542" duration="621000" />
-      <workItem from="1726287383835" duration="21545000" />
+      <workItem from="1726287383835" duration="23238000" />
     </task>
     <task id="LOCAL-00001" summary="init project with dependencies">
       <option name="closed" value="true" />
@@ -386,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726324378222</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="now can add picture to userDto successfully">
+      <option name="closed" value="true" />
+      <created>1726326196532</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1726326196532</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,6 +425,7 @@
     <MESSAGE value="user Dto object created" />
     <MESSAGE value="multipart config annotation" />
     <MESSAGE value="edited ,user can upload a profile picture" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited ,user can upload a profile picture" />
+    <MESSAGE value="now can add picture to userDto successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="now can add picture to userDto successfully" />
   </component>
 </project>

@@ -3,10 +3,7 @@ package lk.ijse.nodecollecter.Controller;
 import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
 import lk.ijse.nodecollecter.Utill.AppUtill;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestPart;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/v1/users")
@@ -34,5 +31,9 @@ public class UserController {
         BuilduserDTO.setProfilePic(base64ProPic);
 
         return BuilduserDTO;
+    }
+    @GetMapping
+    public UserDTO getUsers(UserDTO userDTO){
+        return userDTO;
     }
 }
