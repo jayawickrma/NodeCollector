@@ -4,9 +4,16 @@ import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
 import lk.ijse.nodecollecter.Utill.AppUtill;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 @Service
 public class NoteServiceIMPL implements NoteServices{
+    private static List<NoteDTO>noteDTOList =new ArrayList<>();
+    NoteServiceIMPL(){
+        noteDTOList.add(new NoteDTO("1","book","svdasfd","2020.2020.20","bdvsc","1"));
+        noteDTOList.add(new NoteDTO("2","boooook","svdassdfvd","2020.2020.20","bdvsc","2"));
+        noteDTOList.add(new NoteDTO("3","book","svdasfd","2020.2020.20","bdvsc","3"));
+    }
 
 
     @Override
@@ -17,7 +24,7 @@ public class NoteServiceIMPL implements NoteServices{
 
     @Override
     public List<NoteDTO> getAllNotes() {
-        return null;
+        return noteDTOList;
     }
 
     @Override

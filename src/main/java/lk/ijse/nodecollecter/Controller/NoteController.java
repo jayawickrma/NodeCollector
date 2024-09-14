@@ -23,9 +23,9 @@ public class NoteController {
     public String getSelectedNote(){
         return null;
     }
-    @GetMapping
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<NoteDTO>  getAllNotes(){
-        return null;
+       return noteServices.getAllNotes();
     }
     @DeleteMapping
     public void deleteNote(String noteID){
