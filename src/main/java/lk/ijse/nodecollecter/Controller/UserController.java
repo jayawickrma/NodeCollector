@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
     public UserDTO saveUser(
-            UserDTO userDTO,
            @RequestPart("firstName") String firstName,
            @RequestPart("lastName")  String lastName,
            @RequestPart("email") String email,
