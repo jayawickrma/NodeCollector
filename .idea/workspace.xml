@@ -12,7 +12,7 @@
     <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Config/WebAppRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Config/WebAppRootConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +177,7 @@
       <updated>1725693659313</updated>
       <workItem from="1725693660497" duration="10041000" />
       <workItem from="1726250659542" duration="621000" />
-      <workItem from="1726287383835" duration="7917000" />
+      <workItem from="1726287383835" duration="9458000" />
     </task>
     <task id="LOCAL-00001" summary="init project with dependencies">
       <option name="closed" value="true" />
@@ -275,7 +275,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726294929953</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added hibernate-core dependency">
+      <option name="closed" value="true" />
+      <created>1726297088178</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1726297088178</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added mysql dependency">
+      <option name="closed" value="true" />
+      <created>1726299131139</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1726299131140</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +310,8 @@
     <MESSAGE value="get data to postman from noteServices" />
     <MESSAGE value="created dao pakage" />
     <MESSAGE value="comment differences between cuncumes and produces" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment differences between cuncumes and produces" />
+    <MESSAGE value="added hibernate-core dependency" />
+    <MESSAGE value="added mysql dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="added mysql dependency" />
   </component>
 </project>
