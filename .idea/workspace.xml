@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/DTO/IMPL/NoteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/DTO/IMPL/NoteDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/service/NoteServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/service/NoteServiceIMPL.java" afterDir="false" />
-    </list>
+    <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +173,7 @@
       <updated>1725693659313</updated>
       <workItem from="1725693660497" duration="10041000" />
       <workItem from="1726250659542" duration="621000" />
-      <workItem from="1726287383835" duration="3385000" />
+      <workItem from="1726287383835" duration="4581000" />
     </task>
     <task id="LOCAL-00001" summary="init project with dependencies">
       <option name="closed" value="true" />
@@ -252,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726289682799</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="get data to postman from noteServices">
+      <option name="closed" value="true" />
+      <created>1726291581982</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726291581982</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +271,7 @@
     <MESSAGE value="14th of septmber" />
     <MESSAGE value="service" />
     <MESSAGE value="gdfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="gdfs" />
+    <MESSAGE value="get data to postman from noteServices" />
+    <option name="LAST_COMMIT_MESSAGE" value="get data to postman from noteServices" />
   </component>
 </project>
