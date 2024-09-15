@@ -24,12 +24,12 @@ public class UserController {
         String base64ProPic = AppUtill.generateProfilePicToBase64(profilePic);
         //todo:Build the Object
         UserDTO BuilduserDTO = new UserDTO();
-        BuilduserDTO.setId(userId);
-        BuilduserDTO.setFirstName(firstName);
-        BuilduserDTO.setLastName(lastName);
-        BuilduserDTO.setEmail(email);
-        BuilduserDTO.setPassword(password);
-        BuilduserDTO.setProfilePic(base64ProPic);
+            BuilduserDTO.setId(userId);
+            BuilduserDTO.setFirstName(firstName);
+            BuilduserDTO.setLastName(lastName);
+            BuilduserDTO.setEmail(email);
+            BuilduserDTO.setPassword(password);
+            BuilduserDTO.setProfilePic(base64ProPic);
 
         return BuilduserDTO;
     }
