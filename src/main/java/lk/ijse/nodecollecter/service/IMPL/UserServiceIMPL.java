@@ -7,17 +7,11 @@ import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
 import lk.ijse.nodecollecter.Utill.Mapping;
 import lk.ijse.nodecollecter.service.UserService;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.repository.query.FluentQuery;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Function;
 
 @Service
 @Transactional
@@ -32,19 +26,27 @@ public class UserServiceIMPL implements UserService {
         return mapping.touserDTO(saveuser);
     }
 
+  @Override
+  public List<UserDTO> getAllUsers() {
+    return null;
+  }
+
+//    @Override
+//    public List<UserDTO> getAllUsers() {
+//    List<UserEntity> allUsers= userDAO.findAll();
+//
+//    }
+
     @Override
-    public List<UserDTO> getAllUsers() {
-        return null;
+    public UserDTO getUser(String userID) {
+      UserEntity selectedUser=  userDAO.getReferenceById(userID);
+      return mapping.touserDTO(selectedUser);
     }
 
     @Override
-    public UserDTO getUser(String id) {
-        return null;
-    }
-
-    @Override
-    public void deleteNote(String id) {
-
+    public UserDTO deleteUser(String id) {
+      userDAO.deleteById(id);
+      return null;
     }
 
     @Override

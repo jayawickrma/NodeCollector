@@ -1,15 +1,15 @@
 package lk.ijse.nodecollecter.Controller;
 
-import jakarta.servlet.annotation.MultipartConfig;
 import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
-import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
 import lk.ijse.nodecollecter.Utill.AppUtill;
-import lk.ijse.nodecollecter.service.IMPL.UserServiceIMPL;
 import lk.ijse.nodecollecter.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/users")
@@ -44,8 +44,18 @@ public class UserController {
         return BuilduserDTO;
 
     }
-    @GetMapping
-    public UserDTO getUsers(UserDTO userDTO){
-        return userDTO;
+    @GetMapping(value =" /{userID}",produces = MediaType.APPLICATION_JSON_VALUE)
+    public UserDTO getUser(@PathVariable("userID") String userID){
+        return userService.getUser(userID);
     }
+@ResponseStatus(HttpStatus.NO_CONTENT)
+    @DeleteMapping(value = "/{userID}",produces = MediaType.APPLICATION_JSON_VALUE)
+    public void deleteUser(@PathVariable("userID") String id){
+         userService.deleteUser(id);
+    }
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<UserDTO>getAllUsers(){
+        return userService.getAllUsers();
+    }
+
 }

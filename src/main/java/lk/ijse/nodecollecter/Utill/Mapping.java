@@ -6,6 +6,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class Mapping {
     @Autowired
@@ -16,5 +18,8 @@ public class Mapping {
     }
     public UserDTO touserDTO(UserEntity userEntity){
         return modelMapper.map(userEntity,UserDTO.class);
+    }
+    public List<UserDTO>allUsers(List<UserEntity> userEntities){
+        return modelMapper.map(userEntities,List.class);
     }
 }
