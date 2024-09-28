@@ -1,10 +1,12 @@
 package lk.ijse.nodecollecter.Controller;
 
+import jakarta.servlet.annotation.MultipartConfig;
 import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
 import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
 import lk.ijse.nodecollecter.Utill.AppUtill;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("api/v1/users")
@@ -16,7 +18,7 @@ public class UserController {
            @RequestPart("lastName")  String lastName,
            @RequestPart("email") String email,
            @RequestPart("password") String password,
-           @RequestPart("profilePic")  String profilePic
+           @RequestPart("profilePic") MultipartFile profilePic
     ){
         //user id generate
         String userId =AppUtill.generateUserID();
