@@ -1,6 +1,7 @@
 package lk.ijse.nodecollecter.Controller;
 
 import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
+import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
 import lk.ijse.nodecollecter.Utill.AppUtill;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -32,6 +33,7 @@ public class UserController {
             BuilduserDTO.setProfilePic(base64ProPic);
 
         return BuilduserDTO;
+
     }
     @GetMapping
     public UserDTO getUsers(UserDTO userDTO){

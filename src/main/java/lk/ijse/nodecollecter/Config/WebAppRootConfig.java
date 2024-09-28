@@ -30,6 +30,7 @@ public class WebAppRootConfig {
         driverManagerDataSource.setUsername("root");
         driverManagerDataSource.setPassword("Ijse@1234");
         return driverManagerDataSource;
+
     }
 
     @Bean
