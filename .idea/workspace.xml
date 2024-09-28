@@ -11,8 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Config/WebAppRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Config/WebAppRootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Utill/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Utill/Mapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/UserEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +98,7 @@
       <deployment>
         <artifact name="NodeCollecter:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/NodeCollecter_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -197,7 +198,7 @@
       <workItem from="1727460192281" duration="188000" />
       <workItem from="1727462748679" duration="7829000" />
       <workItem from="1727503806767" duration="4902000" />
-      <workItem from="1727508821764" duration="306000" />
+      <workItem from="1727508821764" duration="2081000" />
     </task>
     <task id="LOCAL-00001" summary="init project with dependencies">
       <option name="closed" value="true" />
@@ -487,14 +488,21 @@
       <option name="project" value="LOCAL" />
       <updated>1727508690565</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="added modelMapper successfully">
+      <option name="closed" value="true" />
+      <created>1727509346350</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1727509346350</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="service" />
     <MESSAGE value="gdfs" />
     <MESSAGE value="get data to postman from noteServices" />
     <MESSAGE value="created dao pakage" />
@@ -519,6 +527,7 @@
     <MESSAGE value="User Service" />
     <MESSAGE value="modelMapper" />
     <MESSAGE value="modelMapper and user entity sent to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="modelMapper and user entity sent to database" />
+    <MESSAGE value="added modelMapper successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="added modelMapper successfully" />
   </component>
 </project>
