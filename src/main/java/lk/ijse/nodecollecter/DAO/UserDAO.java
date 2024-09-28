@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserDAO extends JpaRepository<UserEntity,String> {  //as a parameeter you must include entity class and it's primary key type
-        UserEntity saveUser(UserDTO userDTO);
+
 }

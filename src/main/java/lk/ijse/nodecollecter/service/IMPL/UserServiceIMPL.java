@@ -1,10 +1,12 @@
 package lk.ijse.nodecollecter.service.IMPL;
 
+import jakarta.transaction.Transactional;
 import lk.ijse.nodecollecter.DAO.UserDAO;
 import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
 import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
 import lk.ijse.nodecollecter.service.UserService;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -17,11 +19,13 @@ import java.util.Optional;
 import java.util.function.Function;
 
 @Service
+@Transactional
 public class UserServiceIMPL implements UserService {
-
+  @Autowired
+   private UserDAO userDAO;
     @Override
     public UserDTO saveUser(UserDTO userDTO) {
-        return null;
+        userDAO.save()
     }
 
     @Override
