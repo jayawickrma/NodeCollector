@@ -1,4 +1,4 @@
 package lk.ijse.nodecollecter.DAO;
 
-public class NoteDAO {
+public interface NoteDAO {
 }

@@ -4,6 +4,9 @@ import jakarta.servlet.annotation.MultipartConfig;
 import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
 import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
 import lk.ijse.nodecollecter.Utill.AppUtill;
+import lk.ijse.nodecollecter.service.IMPL.UserServiceIMPL;
+import lk.ijse.nodecollecter.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -11,6 +14,8 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 @RequestMapping("api/v1/users")
 public class UserController {
+    @Autowired
+    private UserService userService;
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE
             ,produces = MediaType.APPLICATION_JSON_VALUE)
     public UserDTO saveUser(
@@ -33,6 +38,8 @@ public class UserController {
             BuilduserDTO.setEmail(email);
             BuilduserDTO.setPassword(password);
             BuilduserDTO.setProfilePic(base64ProPic);
+
+            userService.saveUser(BuilduserDTO);
 
         return BuilduserDTO;
 

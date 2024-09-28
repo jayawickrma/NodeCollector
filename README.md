@@ -35,6 +35,7 @@ This project is part of a class activity in the IJSE GDSE 67 batch. <br>
 15. **@Autowired** – Automatically injects dependencies into Spring-managed components.
 16. **@Requestpath** –in Spring is used to map HTTP requests to specific handler methods in controller classes.
 17. **@Multipart** -there are many request parts.
+18. **@Repository** -Spring will manage this class.this class must be dao layer
 
 ---
 
