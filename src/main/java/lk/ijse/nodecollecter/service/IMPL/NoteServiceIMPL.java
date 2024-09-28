@@ -1,13 +1,14 @@
-package lk.ijse.nodecollecter.service;
+package lk.ijse.nodecollecter.service.IMPL;
 
 import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
 import lk.ijse.nodecollecter.Utill.AppUtill;
+import lk.ijse.nodecollecter.service.NoteServices;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 @Service
-public class NoteServiceIMPL implements NoteServices{
+public class NoteServiceIMPL implements NoteServices {
     private static List<NoteDTO>noteDTOList =new ArrayList<>();
     NoteServiceIMPL(){
         noteDTOList.add(new NoteDTO("1","book","svdasfd","2020.2020.20","bdvsc","1"));
