@@ -31,11 +31,7 @@ public class UserServiceIMPL implements UserService {
     return null;
   }
 
-//    @Override
-//    public List<UserDTO> getAllUsers() {
-//    List<UserEntity> allUsers= userDAO.findAll();
-//
-//    }
+
 
     @Override
     public UserDTO getUser(String userID) {
