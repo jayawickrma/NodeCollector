@@ -35,8 +35,8 @@ public class UserServiceIMPL implements UserService {
 
     @Override
     public UserDTO getUser(String userID) {
-      UserEntity selectedUser=  userDAO.getReferenceById(userID);
-      return mapping.touserDTO(selectedUser);
+      UserEntity user =userDAO.getReferenceById(userID);
+      return mapping.touserDTO(user);
     }
 
     @Override

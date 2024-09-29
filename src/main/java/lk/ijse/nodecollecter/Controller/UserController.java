@@ -51,7 +51,7 @@ public class UserController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping(value = "/{userID}",produces = MediaType.APPLICATION_JSON_VALUE)
     public void deleteUser(@PathVariable("userID") String id){
-         userService.deleteUser(id);
+        userService.deleteUser(id);
     }
 
 
