@@ -9,9 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="noteController class developing">
+    <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/UserEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,15 +199,7 @@
       <workItem from="1727462748679" duration="7829000" />
       <workItem from="1727503806767" duration="4902000" />
       <workItem from="1727508821764" duration="9992000" />
-      <workItem from="1727619892909" duration="10721000" />
-    </task>
-    <task id="LOCAL-00003" summary="created Dtos,controllers">
-      <option name="closed" value="true" />
-      <created>1725695432107</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1725695432107</updated>
+      <workItem from="1727619892909" duration="11712000" />
     </task>
     <task id="LOCAL-00004" summary="id generator">
       <option name="closed" value="true" />
@@ -592,7 +585,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727632951232</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="done">
+      <option name="closed" value="true" />
+      <created>1727633720712</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1727633720712</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -630,11 +631,11 @@
     <MESSAGE value="added modelMapper successfully" />
     <MESSAGE value="server run done" />
     <MESSAGE value="have to to" />
-    <MESSAGE value="done" />
     <MESSAGE value="readme updated" />
     <MESSAGE value="note classes" />
     <MESSAGE value="noteservice class done" />
     <MESSAGE value="noteController class developing" />
-    <option name="LAST_COMMIT_MESSAGE" value="noteController class developing" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>

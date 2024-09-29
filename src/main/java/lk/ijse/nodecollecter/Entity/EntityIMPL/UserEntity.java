@@ -24,5 +24,5 @@ public class UserEntity implements SuperEntity {
     @Column(columnDefinition = "LONGTEXT")
     public String profilePic;
     @OneToMany(mappedBy = "user")
-    public List<NoteEntity> notes;
+    public List<NoteEntity>note;
 }

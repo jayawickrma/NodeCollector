@@ -1,6 +1,7 @@
 package lk.ijse.nodecollecter.Controller;
 
 import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
+import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
 import lk.ijse.nodecollecter.Utill.AppUtill;
 import lk.ijse.nodecollecter.service.NoteServices;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +17,13 @@ public class NoteController {
     private NoteServices noteServices;
     //consumes -frontend eken database ekt yawana data
     //produces -database eken frontend ekata yawana data
-    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE ,produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE ,produces = MediaType.APPLICATION_JSON_VALUE)
     public NoteDTO saveNote(
                             @RequestPart("noteTitle")String noteTitle,
                             @RequestPart("noteDesc")String noteDesc,
                             @RequestPart("date")String createDate,
                             @RequestPart("priorityLevel")String priorityLevel
+
                             ){
         String noteId=AppUtill.generateNoteID();
         NoteDTO noteDTO=new NoteDTO();
