@@ -1,36 +1,38 @@
 package lk.ijse.nodecollecter.service.IMPL;
 
+import lk.ijse.nodecollecter.DAO.NoteDAO;
 import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
+import lk.ijse.nodecollecter.Entity.EntityIMPL.NoteEntity;
 import lk.ijse.nodecollecter.Utill.AppUtill;
+import lk.ijse.nodecollecter.Utill.Mapping;
 import lk.ijse.nodecollecter.service.NoteServices;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 @Service
 public class NoteServiceIMPL implements NoteServices {
-    private static List<NoteDTO>noteDTOList =new ArrayList<>();
-    NoteServiceIMPL(){
-        noteDTOList.add(new NoteDTO("1","book","svdasfd","2020.2020.20","bdvsc","1"));
-        noteDTOList.add(new NoteDTO("2","boooook","svdassdfvd","2020.2020.20","bdvsc","2"));
-        noteDTOList.add(new NoteDTO("3","book","svdasfd","2020.2020.20","bdvsc","3"));
-    }
-
+    @Autowired
+    private NoteDAO noteDAO;
+    @Autowired
+    private Mapping mapping;
 
     @Override
     public NoteDTO saveNote(NoteDTO noteDTO) {
-        noteDTO.setNoteID(AppUtill.generateNoteID());
-        return noteDTO;
+        NoteEntity saveNote =noteDAO.save(mapping.toNoteEntity(noteDTO));
+       return mapping.toNoteDto(saveNote);
     }
 
     @Override
     public List<NoteDTO> getAllNotes() {
-        return noteDTOList;
+
     }
 
     @Override
     public NoteDTO getNote(String noteID)    {
-        return null;
+      NoteEntity selectedNote=  noteDAO.getReferenceById(noteID);
+      return mapping.toNoteDto(selectedNote);
     }
 
     @Override
