@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/DAO/NoteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/DAO/NoteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Utill/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Utill/Mapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/service/IMPL/NoteServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/service/IMPL/NoteServiceIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +197,7 @@
       <workItem from="1727462748679" duration="7829000" />
       <workItem from="1727503806767" duration="4902000" />
       <workItem from="1727508821764" duration="9992000" />
-      <workItem from="1727619892909" duration="9183000" />
+      <workItem from="1727619892909" duration="9830000" />
     </task>
     <task id="LOCAL-00001" summary="init project with dependencies">
       <option name="closed" value="true" />
@@ -578,7 +575,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727628609538</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="note classes">
+      <option name="closed" value="true" />
+      <created>1727632177678</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1727632177678</updated>
+    </task>
+    <task id="LOCAL-00049" summary="noteservice class done">
+      <option name="closed" value="true" />
+      <created>1727632316198</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1727632316198</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,8 +609,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added hibernate-core dependency" />
-    <MESSAGE value="added mysql dependency" />
     <MESSAGE value="added hibernate code to webAppRootConfig file" />
     <MESSAGE value="driverManagerDataSource" />
     <MESSAGE value="created entity pakages and entity classes" />
@@ -621,6 +632,8 @@
     <MESSAGE value="have to to" />
     <MESSAGE value="done" />
     <MESSAGE value="readme updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme updated" />
+    <MESSAGE value="note classes" />
+    <MESSAGE value="noteservice class done" />
+    <option name="LAST_COMMIT_MESSAGE" value="noteservice class done" />
   </component>
 </project>

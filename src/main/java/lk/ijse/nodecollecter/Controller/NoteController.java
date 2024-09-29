@@ -36,8 +36,8 @@ public class NoteController {
 
     }
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public String getSelectedNote(){
-        return null;
+    public void getSelectedNote(String noteID){
+        noteServices.getNote(noteID);
     }
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<NoteDTO>  getAllNotes(){
@@ -45,7 +45,7 @@ public class NoteController {
     }
     @DeleteMapping
     public void deleteNote(String noteID){
-
+        noteServices.deleteNote(noteID);
     }
     @PutMapping
     public void updateNote(String noteID,NoteDTO noteDTO){
