@@ -40,7 +40,7 @@ public class UserServiceIMPL implements UserService {
 
   @Override
   public void deleteUser(String userId) {
-    userDAO.deleteById(userId);
+      userDAO.deleteById(userId);
   }
 
   @Override
