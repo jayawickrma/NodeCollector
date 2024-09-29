@@ -31,21 +31,20 @@ public class UserServiceIMPL implements UserService {
     return null;
   }
 
+  @Override
+  public UserDTO getUser(String userID) {
+    UserEntity getUser =userDAO.getReferenceById(userID);
+    return mapping.touserDTO(getUser);
+  }
 
 
-    @Override
-    public UserDTO getUser(String userID) {
-      UserEntity user =userDAO.getReferenceById(userID);
-      return mapping.touserDTO(user);
+  @Override
+    public void deleteUser(String userID) {
+      userDAO.deleteById(userID);
     }
 
     @Override
-    public void deleteUser(String id) {
-      userDAO.deleteById(id);
-    }
-
-    @Override
-    public void updateUser(String id, UserDTO userDTO) {
+    public void updateUser(String userID, UserDTO userDTO) {
     }
 }
 
