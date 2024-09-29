@@ -44,9 +44,19 @@ public class UserController {
         return BuilduserDTO;
 
     }
- @GetMapping(value = "/{userID}",produces = MediaType.APPLICATION_JSON_VALUE)
-    public UserDTO getUser(String userID){
-        return userService.getUser(userID);
- }
+    @GetMapping(value = "/{userId}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public UserDTO getSelectedUser(@PathVariable ("userId") String userId){
+        return userService.getUser(userId);
+    }
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @DeleteMapping(value = "/{userId}")
+    public void deleteUser(@PathVariable("userId") String userId){
+        userService.deleteUser(userId);
+    }
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<UserDTO> getAllUsers(){
+        return userService.getAllUsers();
+    }
+
 
 }
