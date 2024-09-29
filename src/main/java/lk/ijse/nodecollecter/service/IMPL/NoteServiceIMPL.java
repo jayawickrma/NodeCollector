@@ -26,7 +26,8 @@ public class NoteServiceIMPL implements NoteServices {
 
     @Override
     public List<NoteDTO> getAllNotes() {
-
+        List<NoteEntity> allNotes =noteDAO.findAll();
+        return mapping.allNotes(allNotes);
     }
 
     @Override
@@ -37,7 +38,7 @@ public class NoteServiceIMPL implements NoteServices {
 
     @Override
     public void deleteNote(String noteID) {
-
+            noteDAO.deleteById(noteID);
     }
 
     @Override
