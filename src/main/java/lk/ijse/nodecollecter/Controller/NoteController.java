@@ -17,11 +17,25 @@ public class NoteController {
     //consumes -frontend eken database ekt yawana data
     //produces -database eken frontend ekata yawana data
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE ,produces = MediaType.APPLICATION_JSON_VALUE)
-    public NoteDTO saveNote(@RequestBody NoteDTO noteDTO){
-        noteDTO.setNoteID(AppUtill.generateNoteID());
-        return noteServices.saveNote(noteDTO);
+    public NoteDTO saveNote(
+                            @RequestPart("noteTitle")String noteTitle,
+                            @RequestPart("noteDesc")String noteDesc,
+                            @RequestPart("date")String createDate,
+                            @RequestPart("priorityLevel")String priorityLevel
+                            ){
+        String noteId=AppUtill.generateNoteID();
+        NoteDTO noteDTO=new NoteDTO();
+        noteDTO.setNoteID(noteId);
+        noteDTO.setNoteTitle(noteTitle);
+        noteDTO.setNoteDesc(noteDesc);
+        noteDTO.setCreateDate(createDate);
+        noteDTO.setPriorityLevel(priorityLevel);
+
+        noteServices.saveNote(noteDTO);
+        return noteDTO;
+
     }
-    @GetMapping("he")
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public String getSelectedNote(){
         return null;
     }
