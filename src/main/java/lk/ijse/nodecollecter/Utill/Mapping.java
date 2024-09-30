@@ -28,7 +28,7 @@ public class Mapping {
 
 
     //note Entity
-    public NoteEntity toNoteEntity(NoteDTO noteDTO){return modelMapper.map(noteDTO,NoteEntity.class);}
+    public  NoteEntity toNoteEntity(NoteDTO noteDTO){return modelMapper.map(noteDTO,NoteEntity.class);}
     public NoteDTO toNoteDto(NoteEntity noteEntity){return modelMapper.map(noteEntity,NoteDTO.class);}
     public List<NoteDTO>allNotes(List<NoteEntity> noteEntities){
         return modelMapper.map(noteEntities,new TypeToken<List<NoteDTO>>(){}.getType());

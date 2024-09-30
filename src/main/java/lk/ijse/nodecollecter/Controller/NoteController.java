@@ -20,7 +20,7 @@ public class NoteController {
     private NoteServices noteServices;
     //consumes -frontend eken database ekt yawana data
     //produces -database eken frontend ekata yawana data
-    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE ,produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE ,produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<NoteDTO> saveNote(@RequestBody NoteDTO noteDTO){
         try{
             noteServices.saveNote(noteDTO);

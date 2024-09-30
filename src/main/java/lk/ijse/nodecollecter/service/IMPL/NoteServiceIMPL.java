@@ -3,37 +3,42 @@ package lk.ijse.nodecollecter.service.IMPL;
 import lk.ijse.nodecollecter.DAO.NoteDAO;
 import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
 import lk.ijse.nodecollecter.Entity.EntityIMPL.NoteEntity;
+import lk.ijse.nodecollecter.Exeptions.DataPersistExeption;
 import lk.ijse.nodecollecter.Utill.AppUtill;
 import lk.ijse.nodecollecter.Utill.Mapping;
 import lk.ijse.nodecollecter.service.NoteServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 @Service
 public class NoteServiceIMPL implements NoteServices {
     @Autowired
     private NoteDAO noteDAO;
     @Autowired
-    private Mapping mapping;
+    private Mapping Notemapping;
 
     @Override
-    public NoteDTO saveNote(NoteDTO noteDTO) {
-        NoteEntity saveNote =noteDAO.save(mapping.toNoteEntity(noteDTO));
-       return mapping.toNoteDto(saveNote);
+    public void saveNote(NoteDTO noteDTO) {
+
+        noteDTO.setNoteID(AppUtill.generateNoteID());
+        NoteEntity savedNote =
+                noteDAO.save(Notemapping.toNoteEntity(noteDTO));
+        if(savedNote == null){
+            throw new DataPersistExeption("Note not saved");
+        }
     }
 
     @Override
     public List<NoteDTO> getAllNotes() {
         List<NoteEntity> allNotes =noteDAO.findAll();
-        return mapping.allNotes(allNotes);
+        return Notemapping.allNotes(allNotes);
     }
 
     @Override
     public NoteDTO getNote(String noteID)    {
       NoteEntity selectedNote=  noteDAO.getReferenceById(noteID);
-      return mapping.toNoteDto(selectedNote);
+      return Notemapping.toNoteDto(selectedNote);
     }
 
     @Override

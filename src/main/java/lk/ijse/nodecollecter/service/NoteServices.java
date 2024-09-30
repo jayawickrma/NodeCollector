@@ -5,7 +5,7 @@ import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
 import java.util.List;
 
 public interface NoteServices {
-    NoteDTO saveNote(NoteDTO noteDTO);
+    void saveNote(NoteDTO noteDTO);
     List<NoteDTO> getAllNotes();
     NoteDTO getNote(String noteID);
     void deleteNote(String noteID);
