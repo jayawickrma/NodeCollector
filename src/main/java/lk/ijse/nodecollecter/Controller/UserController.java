@@ -39,9 +39,9 @@ public class UserController {
             BuilduserDTO.setPassword(password);
             BuilduserDTO.setProfilePic(base64ProPic);
 
-            userService.saveUser(BuilduserDTO);
+        userService.saveUser(BuilduserDTO);
 
-        return BuilduserDTO;
+    return BuilduserDTO;
 
     }
     @GetMapping(value = "/{userId}", produces = MediaType.APPLICATION_JSON_VALUE)

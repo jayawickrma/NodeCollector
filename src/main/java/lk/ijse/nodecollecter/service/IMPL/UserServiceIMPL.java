@@ -4,6 +4,7 @@ import jakarta.transaction.Transactional;
 import lk.ijse.nodecollecter.DAO.UserDAO;
 import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
 import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
+import lk.ijse.nodecollecter.Exeptions.DataPersistExeption;
 import lk.ijse.nodecollecter.Utill.Mapping;
 import lk.ijse.nodecollecter.service.UserService;
 
@@ -25,6 +26,10 @@ public class UserServiceIMPL implements UserService {
     public UserDTO saveUser(UserDTO userDTO) {
         UserEntity saveuser=userDAO.save(mapping.toUserEntity(userDTO));
         return mapping.touserDTO(saveuser);
+
+        if (saveuser==null){
+          throw new DataPersistExeption("User not saved!!..")
+        }
     }
 
   @Override
@@ -42,6 +47,7 @@ public class UserServiceIMPL implements UserService {
   @Override
   public void deleteUser(String userId) {
       userDAO.deleteById(userId);
+
   }
 
   @Override
