@@ -2,6 +2,8 @@ package lk.ijse.nodecollecter.Controller;
 
 import lk.ijse.nodecollecter.CustomStatusCode.SelectedUserStatus;
 import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
+import lk.ijse.nodecollecter.DTO.SuperDTO;
+import lk.ijse.nodecollecter.DTO.UserStatus;
 import lk.ijse.nodecollecter.Utill.AppUtill;
 import lk.ijse.nodecollecter.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,8 +48,11 @@ public class UserController {
 
     }
     @GetMapping(value = "/{userId}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public UserDTO getSelectedUser(@PathVariable ("userId") String userId){
-        return userService.getUser(userId);
+    public UserStatus getSelectedUser(@PathVariable ("userId") String userId){
+        if (userId.isEmpty() || userId==null){
+            return new SelectedUserStatus(1,"Couldn't find user");
+        }
+        return (UserStatus) userService.getUser(userId);
     }
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping(value = "/{userId}")
