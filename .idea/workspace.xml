@@ -11,9 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/CustomStatusCode/SelectedUserStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/CustomStatusCode/SelectedUserStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/service/IMPL/UserServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/service/IMPL/UserServiceIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/DTO/IMPL/NoteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/DTO/IMPL/NoteDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,23 +201,7 @@
       <workItem from="1727462748679" duration="7829000" />
       <workItem from="1727503806767" duration="4902000" />
       <workItem from="1727508821764" duration="9992000" />
-      <workItem from="1727619892909" duration="22140000" />
-    </task>
-    <task id="LOCAL-00013" summary="added hibernate-core dependency">
-      <option name="closed" value="true" />
-      <created>1726297088178</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1726297088178</updated>
-    </task>
-    <task id="LOCAL-00014" summary="added mysql dependency">
-      <option name="closed" value="true" />
-      <created>1726299131139</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1726299131140</updated>
+      <workItem from="1727619892909" duration="25996000" />
     </task>
     <task id="LOCAL-00015" summary="added hibernate code to webAppRootConfig file">
       <option name="closed" value="true" />
@@ -596,7 +579,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727679034656</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="status">
+      <option name="closed" value="true" />
+      <created>1727680158109</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1727680158109</updated>
+    </task>
+    <task id="LOCAL-00063" summary="regex">
+      <option name="closed" value="true" />
+      <created>1727682981214</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1727682981214</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +613,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="database connectivity done" />
     <MESSAGE value="profile pic contert to base64 method created" />
     <MESSAGE value="user Dto object created" />
     <MESSAGE value="multipart config annotation" />
@@ -639,6 +637,7 @@
     <MESSAGE value="update method" />
     <MESSAGE value="Exeptions" />
     <MESSAGE value="status" />
-    <option name="LAST_COMMIT_MESSAGE" value="status" />
+    <MESSAGE value="regex" />
+    <option name="LAST_COMMIT_MESSAGE" value="regex" />
   </component>
 </project>
