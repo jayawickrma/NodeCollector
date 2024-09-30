@@ -1,6 +1,7 @@
 package lk.ijse.nodecollecter.service.IMPL;
 
 import jakarta.transaction.Transactional;
+import lk.ijse.nodecollecter.CustomStatusCode.SelectedUserStatus;
 import lk.ijse.nodecollecter.DAO.UserDAO;
 import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
 import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
@@ -25,6 +26,9 @@ public class UserServiceIMPL implements UserService {
     @Override
     public UserDTO saveUser(UserDTO userDTO) {
         UserEntity saveuser=userDAO.save(mapping.toUserEntity(userDTO));
+        if (saveuser==null){
+          throw new DataPersistExeption("something went wrong0");
+        }
         return mapping.touserDTO(saveuser);
 
     }
@@ -37,8 +41,13 @@ public class UserServiceIMPL implements UserService {
 
   @Override
   public UserDTO getUser(String userId) {
-    UserEntity selectedUser = userDAO.getReferenceById(userId);
-    return mapping.touserDTO(selectedUser);
+      if (userDAO.existsById(userId)){
+        UserEntity selectedUser = userDAO.getReferenceById(userId);
+        return mapping.touserDTO(selectedUser);
+      }else {
+        return new SelectedUserStatus(2,"User With ID " + userId + " Not found");
+      }
+
   }
 
   @Override
