@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -45,7 +46,14 @@ public class UserServiceIMPL implements UserService {
 
   @Override
   public void updateUser(String userId, UserDTO userDTO) {
-      userDAO.findById(userId);
+    Optional<UserEntity>id = userDAO.findById(userId);
+      if (id.isPresent()){
+        id.get().setFirstName(userDTO.getFirstName());
+        id.get().setLastName(userDTO.getLastName());
+        id.get().setEmail(userDTO.getEmail());
+        id.get().setPassword(userDTO.getPassword());
+        id.get().setProfilePic(userDTO.getProfilePic());
+      }
   }
 }
 
