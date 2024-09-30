@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class SelectedUserStatus implements UserStatus {
-    private String statusCode;
+    private int statusCode;
     private String statusMessage;
 }
