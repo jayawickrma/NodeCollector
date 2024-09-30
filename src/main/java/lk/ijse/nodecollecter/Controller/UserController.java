@@ -65,7 +65,7 @@ public class UserController {
         if(!regexMatcher.matches()){
             return new SelectedUserStatus(1,"User ID is not valid");
         }
-        return (UserStatus) userService.getUser(userId);
+        return  userService.getUser(userId);
     }
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping(value = "/{userId}")

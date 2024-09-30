@@ -1,6 +1,7 @@
 package lk.ijse.nodecollecter.DTO.IMPL;
 
 import lk.ijse.nodecollecter.DTO.SuperDTO;
+import lk.ijse.nodecollecter.DTO.UserStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class UserDTO implements SuperDTO {
+public class UserDTO implements UserStatus {
     public String id;
     public String firstName;
     public String lastName;
