@@ -11,8 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="248031c3-78dc-45fd-9d59-9e05dae8955b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/NoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Entity/EntityIMPL/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/service/IMPL/UserServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/nodecollecter/service/IMPL/UserServiceIMPL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +62,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -199,23 +201,7 @@
       <workItem from="1727462748679" duration="7829000" />
       <workItem from="1727503806767" duration="4902000" />
       <workItem from="1727508821764" duration="9992000" />
-      <workItem from="1727619892909" duration="11712000" />
-    </task>
-    <task id="LOCAL-00004" summary="id generator">
-      <option name="closed" value="true" />
-      <created>1725704078042</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1725704078042</updated>
-    </task>
-    <task id="LOCAL-00005" summary="app init class">
-      <option name="closed" value="true" />
-      <created>1725704209489</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1725704209489</updated>
+      <workItem from="1727619892909" duration="13556000" />
     </task>
     <task id="LOCAL-00006" summary="configuration classes">
       <option name="closed" value="true" />
@@ -593,7 +579,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727633720712</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="done and have to do something">
+      <option name="closed" value="true" />
+      <created>1727634726852</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1727634726852</updated>
+    </task>
+    <task id="LOCAL-00054" summary="done and have to do something">
+      <option name="closed" value="true" />
+      <created>1727635110804</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1727635110804</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +613,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="driverManagerDataSource" />
     <MESSAGE value="created entity pakages and entity classes" />
     <MESSAGE value="entity files and add their primary and foreign keys" />
     <MESSAGE value="give pakage name to web app root config file" />
@@ -636,6 +637,7 @@
     <MESSAGE value="noteservice class done" />
     <MESSAGE value="noteController class developing" />
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="done and have to do something" />
+    <option name="LAST_COMMIT_MESSAGE" value="done and have to do something" />
   </component>
 </project>

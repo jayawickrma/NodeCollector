@@ -58,6 +58,25 @@ public class UserController {
 
         return userService.getAllUsers();
     }
+        @PutMapping(value = "/{userID}" ,consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void updateUser( @RequestPart("firstName") String firstName,
+                            @RequestPart("lastName")  String lastName,
+                            @RequestPart("email") String email,
+                            @RequestPart("password") String password,
+                            @RequestPart("profilePic") MultipartFile profilePic,
+                            @PathVariable String userID){
 
+        String base64ProPic = AppUtill.generateProfilePicToBase64(profilePic);
+
+        UserDTO userDTO=new UserDTO();
+        userDTO.setId(userID);
+        userDTO.setFirstName(firstName);
+        userDTO.setLastName(lastName);
+        userDTO.setEmail(email);
+        userDTO.setPassword(password);
+        userDTO.setProfilePic(base64ProPic);
+               userService.updateUser(userID,userDTO);
+
+    }
 
 }

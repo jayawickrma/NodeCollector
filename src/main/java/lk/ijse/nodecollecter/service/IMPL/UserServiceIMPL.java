@@ -45,7 +45,7 @@ public class UserServiceIMPL implements UserService {
 
   @Override
   public void updateUser(String userId, UserDTO userDTO) {
-
+      userDAO.findById(userId);
   }
 }
 
