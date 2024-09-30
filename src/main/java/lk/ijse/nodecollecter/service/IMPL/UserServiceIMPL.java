@@ -27,9 +27,6 @@ public class UserServiceIMPL implements UserService {
         UserEntity saveuser=userDAO.save(mapping.toUserEntity(userDTO));
         return mapping.touserDTO(saveuser);
 
-        if (saveuser==null){
-          throw new DataPersistExeption("User not saved!!..")
-        }
     }
 
   @Override
